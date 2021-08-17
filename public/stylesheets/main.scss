@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Roboto:wght@100&display=swap");
+
+$font1: "Noto Sans JP", sans-serif;
+$font2: "Roboto", sans-serif;
+
+$color1: #1f232b;
+$color2: #363744;
+$color3: #ffffff;
+$color4: #ef8233;
+$color5: #ba622d;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color1;
+  color: $color3;
+  font-family: $font1;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+
+  h1 {
+    a {
+      font-size: 28px;
+      justify-self: start;
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  nav {
+    justify-self: end;
+  }
+
+  ul li {
+    display: inline-block;
+    zoom: 1;
+    *display: inline !important;
+    list-style: none;
+
+    a {
+      color: white;
+      text-decoration: none;
+      margin: 0 0 0 5vw;
+      font-size: 18px;
+    }
+  }
+
+  #featured {
+    border: 1px solid $color4;
+    padding: 0.3em 2em 0.3em 2em;
+    border-radius: 20px;
+  }
+}
+
+main {
+  text-align: center;
+  margin-top: 100px;
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h2:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin: 55px 0 0 -3%;
+    width: 6%;
+    height: 6px;
+    background-color: $color4;
+  }
+}
+
+.tools {
+  width: 600px;
+  margin: 80px auto 20px auto;
+  text-align: left;
+
+  span {
+    margin: 0 20px 0 0;
+  }
+}
+
+.post-container {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 15px;
+  overflow-y: scroll;
+  width: 600px;
+  height: auto;
+  margin: 0 auto 0 auto;
+}
+
+.blog {
+  background-color: $color2;
+  height: 120px;
+  width: auto;
+  display: grid;
+  grid-template-columns: 120px auto;
+  grid-template-rows: 1fr 1fr;
+
+  .img {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    background-color: $color2;
+
+    img {
+      margin: 20px auto 0 auto;
+      display: block;
+      height: 80px;
+      width: 80px;
+      background-color: black;
+      border-radius: 50%;
+      border: 0;
+      object-fit: cover;
+    }
+  }
+
+  h3 {
+    justify-self: start;
+    font-family: $font1;
+    text-indent: 10px;
+  }
+
+  p {
+    justify-self: start;
+    font-family: $font2;
+    color: darken($color3, 25%);
+    text-indent: 10px;
+  }
+}

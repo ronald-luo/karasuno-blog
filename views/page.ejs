@@ -1,0 +1,15 @@
+<%- include('./includes/header') %>
+
+<main>
+    <h2><%= title %> </h2>
+    <article>
+        <h3><%= description %></h3>
+        <p><%= body %></p>
+    </article>
+</main>
+
+<img id="delete" data-doc="<%= _id %>" src="https://s2.svgbox.net/materialui.svg?ic=delete_outline&color=ff0000" width="32" height="32">
+
+<script src="/javascripts/page.js"></script>
+
+<%- include('./includes/footer') %>

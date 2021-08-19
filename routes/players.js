@@ -34,7 +34,6 @@ var players = [
         src: "/images/Sugawara.png",
         position: "Vice-Captain / Setter / Pinch Server",
     },
-
     {
         name: "Asahi Azumane",
         src: "/images/Asahi.png",
@@ -85,7 +84,6 @@ var players = [
         src: "/images/Yamaguchi.jpeg",
         position: "Middle Blocker / Pinch Server",
     },
-    
     
 ]
 

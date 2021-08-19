@@ -252,6 +252,8 @@ form {
   margin: 100px auto 0 auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  grid-gap: 20px;
 }
 
 .card {
@@ -284,8 +286,9 @@ form {
 
   p {
     font-family: $font2;
+    font-size: 16px;
     color: darken($color3, 20%);
-    margin: 10px 0 0 10px;
+    margin: 10px 10px 0 10px;
   }
 
   &:hover {
